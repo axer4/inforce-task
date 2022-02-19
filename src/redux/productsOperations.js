@@ -26,7 +26,7 @@ const getProducts = createAsyncThunk(
           'products/deleteProduct',
           async(productId,thunkAPI) => {
               try {
-                  const {data} = await axios.delete(`products/${productId}`);
+                   await axios.delete(`products/${productId}`);
                   return productId
                 
               }
